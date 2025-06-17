@@ -1,0 +1,52 @@
+{
+  "name": "react-real-select",
+  "version": "0.1.0",
+  "description": "A lightweight React select component based on the native <select> element, fully customizable with CSS.",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build && npm run typecheck"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.40",
+    "@types/react-dom": "^18.2.17",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tsup": "^7.2.0",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [
+    "react",
+    "select",
+    "custom-select",
+    "accessible",
+    "native",
+    "react-component",
+    "react-select",
+    "html-select"
+  ],
+  "author": "Твоё имя или ник",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/твой-профиль/react-real-select.git"
+  }
+}
